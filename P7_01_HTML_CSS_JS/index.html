@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/index.css">
+
+    <title>P7 Restaurant Review Site</title>
+</head>
+
+<body>
+    <div class="mb-3  px-0 mx-0" id="sortByStarDiv">
+        <div class="row pt-2 ">
+            <h6 class="mx-auto">Sort By Star </h6>
+        </div>
+        <div class="row">
+            <div class="form-inline mx-auto">
+                <h6 class="mx-2">From </h6>
+                <select name="sort-by-min" class="form-control" id="sortByMinStar">
+                    <option value="0" selected>0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <h6 class="mx-2">To </h6>
+                <select name="sort-by-max" class="form-control" id="sortByMaxStar">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5" selected>5</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="row py-0 my-0 px-0 mx-0" id="main-view">
+        <div class="col-12">
+            <div id="map"></div>
+            <div id="panel" class="d-none">
+                <!-- The card panel for showing place details will create many card markups like these-->
+                <!--<div class="card my-3">
+                            <div class="card-body">
+                                <div class="row px-2">
+                                    <img src="images/restaurant-icon.png" style="height: 4rem;">
+                                    <div class="col">
+                                        <h5 class="card-title">1</h5>
+                                        <p class="details">Rating: 3✮</p>
+                                    </div>
+                                </div>
+                            </div>
+                    </div> -->
+            </div>
+            <div id="restaurant-details" class="d-none">
+                <div class="card mb-3 pt-0">
+                    <div>
+                        <button type="button" class="close" id="close-details-button">
+                            <span> Restaurant Details</span> <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div id="street-view">
+                        <div id="pano"></div>
+                    </div>
+                    <div class="mx-auto py-3 photo-card">
+                        <img src="" alt="" id="photo">
+                    </div>
+                    <div class="card-body px-4">
+                    </div>
+                    <ul id="list-reviews" class="list-unstyled px-4">
+                    </ul>
+                    <button id="create-review-button" class="btn btn-danger mx-4 d-none" type="button">Show Review
+                        Form</button>
+
+                    <div id="create-review-div"></div>
+                    <button class="btn btn-danger mx-4 d-none" id="submit-review-button">Add your review</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mx-auto py-0 my-0">
+        <div class="col-6 px-0 mx-0">
+            <button type="button" class="btn btn-lg  btn-primary  btn-block" id="display-map-button">Map</button>
+        </div>
+        <div class="col-6 px-0 mx-0">
+            <button type="button" class="btn btn-lg btn-secondary btn-block" id="display-list-button">List</button>
+        </div>
+    </div>
+    <!-- The info Window Content Markup Will be created like these in js file -->
+    <!-- <div class="card d-none" id="popUpWindow">
+                <img class="card-img-top" id="info-img"
+                    src=""  alt="" style="width:100% ;height:6rem">
+                <div class="card-body">
+                    <h6 class="card-title px-4" id="info-name"></h6>
+                    <p id="info-rating" class="my-0"><span id="info-rating"> </span> <span class="star"></span> </p>
+                    <p class="my-0 text-muted" id="info-vicinity"> </p>
+                    <p id="info-phone" class="my-0"></p>
+                </div>
+        </div> -->
+
+    <!-- JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+        </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+        </script>
+
+    <!-- Custom Javascript-->
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=UseYourOwnAPIKeyPlease&libraries=places,geometry">
+        </script>
+    <script src="js/index.js" type="module"></script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+#map {
+    width: 100%;
+    height: 520px;
+}
+
+#panel {
+    border: 1px black;
+    height: 520px;
+    overflow: auto;
+}
+
+#main-view {
+    position: relative;
+}
+
+#restaurant-details {
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 520px;
+    position: absolute;
+    overflow: auto;
+    z-index: 1;
+}
+
+#info-img {
+    width: 100%;
+    height: 6rem;
+}
+
+#pano {
+    width: 100%;
+    height: 250px;
+}
+
+.star {
+    background-size: 14px 14px;
+    background-image: url("//maps.gstatic.com/consumer/images/icons/2x/ic_star_rate_14.png");
+    height: 14px;
+    width: 14px;
+    vertical-align: top;
+    margin-top: 3px;
+    display: inline-block;
+}
+
+.open, .hero {
+    width: 250px;
+}
+
+#display-list-button, #display-map-button {
+    border-radius: 0px;
+}

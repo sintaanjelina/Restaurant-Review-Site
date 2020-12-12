@@ -1,0 +1,62 @@
+[
+    {
+        "placeId" : 1,
+        "restaurantName": "1",
+        "position": {   
+            "lat": 1.685523625,
+            "lng": 101.441994125
+        },
+        "ratings": [
+            {
+                "author": "author1.1",
+                "comment": "So so!",
+                "star": 2
+            },
+            {
+                "author": "author1.2",
+                "comment": "Average!",
+                "star": 3
+            }
+        ]
+    },
+    {
+        "placeId": 2,
+        "restaurantName": "2",
+        "position": {
+            "lat": 1.6777943821279353,
+            "lng": 101.44505001854162
+        },
+        "ratings": [
+            {
+                "author": "author2.1",
+                "comment": "So so!",
+                "star": 2
+            },
+            {
+                "author" : "author2.2",
+                "comment" : "Average!",
+                "star": 3
+            }
+        ]
+    },
+    {
+        "placeId": 3,
+        "restaurantName": "3",
+        "position": {
+            "lat": 2,
+            "lng": 120
+        },
+        "ratings": [
+            {
+                "author": "author3.1",
+                "comment": "So so!",
+                "star": 2
+            },
+            {
+                "author": "author3.2",
+                "comment": "Average!",
+                "star": 3
+            }
+        ]
+    }
+]
